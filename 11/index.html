@@ -37,7 +37,7 @@
     sessionStorage.getItem("utm_params") ||
     "";
 
-  const back_redirect_back_link = "../back" + params;
+  const back_redirect_back_link = "../back/" + params;
 
   history.pushState({}, "", location.href);
   history.pushState({}, "", location.href);
@@ -1128,7 +1128,7 @@ function startCounter(start, end, duration) {
 // Botão RESGATAR AGORA
 document.getElementById("continue-btn").addEventListener("click", function () {
     const params = window.location.search || sessionStorage.getItem("utm_params") || "";
-    window.location.href = "../saque" + params;
+    window.location.href = "../saque/" + params;
 });
 
 
