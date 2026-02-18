@@ -32,7 +32,7 @@
     sessionStorage.getItem("utm_params") ||
     "";
 
-  const back_redirect_back_link = "../back" + params;
+  const back_redirect_back_link = "../back/" + params;
 
   history.pushState({}, "", location.href);
   history.pushState({}, "", location.href);
@@ -1010,7 +1010,7 @@ a.elementor-button.btn-sacar:active {
       sessionStorage.getItem("utm_params") ||
       "";
 
-    window.location.href = "../4" + params;
+    window.location.href = "../4/" + params;
   };
 }
 
